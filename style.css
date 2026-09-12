@@ -214,14 +214,17 @@ h1 {
   text-shadow: 0 2px 2px #000;
 }
 
-.header-logo {
-  display: block;
+.title-with-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-
-  margin: 0 auto 18px;
+.title-with-logo img {
+  height: 1em;
+  width: auto;
+  flex-shrink: 0;
 }
 
 /* Description underneath header */
