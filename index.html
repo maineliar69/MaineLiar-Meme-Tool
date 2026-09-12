@@ -1,17 +1,15 @@
-<!doctype html>
-<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>The Maine Liar Meme Tool</title>
+  <title>The Maine Liar Background Replacer</title>
 
-  <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <main class="app">
+<main class="app">
 
     <!-- =========================
          HEADER / BRANDING
@@ -30,7 +28,7 @@
         <h1>Background Replacer</h1>
 
         <p>
-          Drop in a photo, position it behind the hacks,
+          Drop in a photo, position it behind the artwork,
           then download the finished image.
         </p>
       </div>
@@ -41,7 +39,7 @@
     <!-- =========================
          IMAGE EDITOR
          ========================= -->
-    <section class="editor-card">
+<section class="editor-card">
 
       <div
         id="stage"
@@ -49,27 +47,27 @@
         aria-label="Image editor"
       >
 
-        <canvas id="canvas"></canvas>
+<canvas id="canvas"></canvas>
 
         <div
           id="dropHint"
           class="drop-hint"
         >
-          <strong>Drop an image here</strong>
+<strong>Drop an image here</strong>
           <span>or click Choose Image</span>
-        </div>
+</div>
 
-      </div>
+</div>
 
 
       <!-- =========================
            CONTROLS
            ========================= -->
-      <div class="controls">
+<div class="controls">
 
-        <label class="file-button">
+<label class="file-button">
 
-          Choose Image
+Choose Image
 
           <input
             id="fileInput"
@@ -77,10 +75,10 @@
             accept="image/*"
           />
 
-        </label>
+</label>
 
 
-        <div class="zoom-row">
+<div class="zoom-row">
 
           <label for="zoom">
             Zoom
@@ -95,10 +93,10 @@
             value="1"
           />
 
-        </div>
+</div>
 
 
-        <div class="button-row">
+<div class="button-row">
 
           <button
             id="fitBtn"
@@ -121,7 +119,7 @@
             Reset
           </button>
 
-        </div>
+</div>
 
 
         <button
@@ -130,12 +128,12 @@
           type="button"
           disabled
         >
-          Download PNG
-        </button>
+Download PNG
+</button>
 
-      </div>
+</div>
 
-    </section>
+</section>
 
 
     <!-- =========================
@@ -145,13 +143,13 @@
       Your image stays in your browser and is not uploaded anywhere.
     </p>
 
-  </main>
+</main>
 
 
   <!-- =========================
        JAVASCRIPT
        ========================= -->
-  <script src="app.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
