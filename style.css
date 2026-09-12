@@ -214,6 +214,15 @@ h1 {
   text-shadow: 0 2px 2px #000;
 }
 
+.header-logo {
+  display: block;
+
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+
+  margin: 0 auto 18px;
+}
 
 /* Description underneath header */
 .sub {
