@@ -3,49 +3,155 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Maine Liar Hacks Tool</title>
+
+  <title>The Maine Liar Background Replacer</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main class="app">
-    <h1>Maine Liar Hacks Tool</h1>
-    <p class="sub">Drop in a photo, position it behind the two hacks, then download the result!</p>
 
-    <section class="editor-card">
-      <div id="stage" class="stage" aria-label="Image editor">
-        <canvas id="canvas"></canvas>
-        <div id="dropHint" class="drop-hint">
-          <strong>Drop an image here</strong>
-          <span>or tap Choose Image</span>
-        </div>
+<body>
+
+  <main class="app">
+
+    <!-- =========================
+         HEADER / BRANDING
+         ========================= -->
+    <header class="site-header">
+
+      <img
+        src="assets/logo.svg"
+        class="brand-logo"
+        alt="The Maine Liar"
+      />
+
+      <div class="header-divider"></div>
+
+      <div class="header-copy">
+        <h1>Background Replacer</h1>
+
+        <p>
+          Drop in a photo, position it behind the artwork,
+          then download the finished image.
+        </p>
       </div>
 
+    </header>
+
+
+    <!-- =========================
+         IMAGE EDITOR
+         ========================= -->
+    <section class="editor-card">
+
+      <div
+        id="stage"
+        class="stage"
+        aria-label="Image editor"
+      >
+
+        <canvas id="canvas"></canvas>
+
+        <div
+          id="dropHint"
+          class="drop-hint"
+        >
+          <strong>Drop an image here</strong>
+          <span>or click Choose Image</span>
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           CONTROLS
+           ========================= -->
       <div class="controls">
+
         <label class="file-button">
+
           Choose Image
-          <input id="fileInput" type="file" accept="image/*" />
+
+          <input
+            id="fileInput"
+            type="file"
+            accept="image/*"
+          />
+
         </label>
 
+
         <div class="zoom-row">
-          <label for="zoom">Zoom</label>
-          <input id="zoom" type="range" min="0.1" max="5" step="0.01" value="1" />
+
+          <label for="zoom">
+            Zoom
+          </label>
+
+          <input
+            id="zoom"
+            type="range"
+            min="0.1"
+            max="5"
+            step="0.01"
+            value="1"
+          />
+
         </div>
+
 
         <div class="button-row">
-          <button id="fitBtn" type="button">Fit</button>
-          <button id="fillBtn" type="button">Fill</button>
-          <button id="resetBtn" type="button">Reset</button>
+
+          <button
+            id="fitBtn"
+            type="button"
+          >
+            Fit
+          </button>
+
+          <button
+            id="fillBtn"
+            type="button"
+          >
+            Fill
+          </button>
+
+          <button
+            id="resetBtn"
+            type="button"
+          >
+            Reset
+          </button>
+
         </div>
 
-        <button id="downloadBtn" class="primary" type="button" disabled>
+
+        <button
+          id="downloadBtn"
+          class="primary"
+          type="button"
+          disabled
+        >
           Download PNG
         </button>
+
       </div>
+
     </section>
 
-    <p class="privacy">Your image stays in your browser and is not uploaded anywhere.</p>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <p class="privacy">
+      Your image stays in your browser and is not uploaded anywhere.
+    </p>
+
   </main>
 
+
+  <!-- =========================
+       JAVASCRIPT
+       ========================= -->
   <script src="app.js"></script>
+
 </body>
 </html>
