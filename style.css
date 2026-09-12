@@ -11,8 +11,35 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top, #242424 0, #111 48%);
+
+  background: linear-gradient(
+    120deg,
+    #ff8a8a,
+    #ffd18a,
+    #fff3a0,
+    #a8e6a3,
+    #8edbe6,
+    #a8b8e8,
+    #d2a5df,
+    #ffb3cf
+  );
+
+  background-size: 400% 400%;
+  animation: rainbowBackground 25s ease infinite;
+}
+
+@keyframes rainbowBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .app {
